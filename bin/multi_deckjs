@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+begin
+  require 'rubygems'
+  gem 'multi_deckjs'
+rescue LoadError
+end
+
+require "multi_deckjs"
+
+MultiDeckjs::Server.run
